@@ -48,7 +48,7 @@ const FormOne = () => {
           </select>
             <button
               type="submit"
-              className={color === "black" ? "black" : "btn"}
+              className={color === "black" ? "red" : "btn"}
               id="submit-btn"
             >
               Next{" "}

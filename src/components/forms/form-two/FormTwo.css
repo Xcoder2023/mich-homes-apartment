@@ -106,11 +106,11 @@
     border: 1px solid var(--White, #FFF);
 }
 
-button.black{
+button.yello{
     background-color: black;
     display: flex;
-    width: 310px;
-    height: 57px;
+    width: 340px;
+    height: 45px;
     padding: 16px 48px;
     justify-content: center;
     align-items: center;
@@ -216,8 +216,9 @@ button.black{
         background: var(--secondary-dark, #D1AC00);
     }
 
-    button.black{
+    button.yello{
         width: 240px !important;
+        height: 60px;
        
     }
     .next{

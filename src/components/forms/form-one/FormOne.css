@@ -63,10 +63,11 @@
     display: flex;
     width: 254px;
     height: 50px;
-    padding-left: 0px;
-    justify-content: flex-end;
-    align-items: center;
-    flex-shrink: 0;
+    padding-left: 10px;
+    font-size: 16px;
+    font-family: 'poppins';
+    font-weight: 500px;
+    color: var(--primary-main-color, #004643);
 }
 .date-input{
     display: flex;
@@ -82,7 +83,7 @@
 
 .btn{
     display: flex;
-    width: 300px;
+    width: 305px;
     height: 60px;
     padding: 21px 24px 21px 16px;
     justify-content: center;
@@ -95,9 +96,9 @@
     border-radius: 4px;
     background: var(--dark-dark-4, #C7C9D9);
 }
-button.black{
+button.red{
     display: flex;
-    width: 300px;
+    width: 310px !important;
     height: 60px;
     padding: 21px 24px 21px 16px;
     justify-content: center;
@@ -125,7 +126,6 @@ button.black{
     .form-part p{
         width: 100%;
         font-size: 30px;
-        /* font-weight: 300; */
         padding-left: 0px;
     }
     
@@ -161,10 +161,7 @@ button.black{
     #date-input{
         display: flex;
         height: 50px;
-        padding-left: 0px;
-        justify-content: flex-end;
-        align-items: center;
-        flex-shrink: 0;
+        font-weight: 400px;
     }
     .date-input{
         width: 100%;
@@ -176,10 +173,10 @@ button.black{
         width: 100%;
     }
     .btn{
-        width: 100%;
+        width: 345px !important;
     }
-    button.black{
-        width: 350px !important;
+    button.red{
+        width: 345px !important;
     }
     
 }

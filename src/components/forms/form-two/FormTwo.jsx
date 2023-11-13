@@ -134,7 +134,7 @@ const FormTwo = () => {
                   </svg>
                 </button>
               </Link>
-              <button className={color === "black" ? "black" : "next"}>
+              <button className={color === "black" ? "yello" : "next"}>
                 Next{" "}
                 <svg
                   xmlns="http://www.w3.org/2000/svg"

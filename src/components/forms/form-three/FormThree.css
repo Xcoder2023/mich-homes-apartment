@@ -59,7 +59,11 @@
     align-items: center;
     flex-shrink: 0;
     border: none;
+    font-size: 16px;
+    font-weight: 500px;
+    font-family: 'poppins';
     border-radius: 8px;
+    color: var(--Black, #000);
     background: var(--White, #FFF);
 }
 
