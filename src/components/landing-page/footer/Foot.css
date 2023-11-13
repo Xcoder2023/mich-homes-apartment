@@ -1,0 +1,146 @@
+.foot-general{
+    padding: 50px 160px;
+    flex-shrink: 0;
+    color: #FFF;
+    margin-top: -100px;
+    background: var(--primary-darker, #0C1618);
+}
+
+.wrapper{
+    display: flex;
+    justify-content: center;
+}
+.foot-logo img{
+    width: 100px;
+}
+
+.awka-michHomes{
+    color: #FFF;
+    font-family: 'Poppins';
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 170%; 
+    width: 303px;
+}
+
+.infos{
+    width: 207px;
+    height: 186px;
+    flex-shrink: 0;
+    
+}
+
+.infos ul{
+    list-style-type: none;
+    line-height: 30px;  
+}
+
+.contacts P,
+.infos P,
+.social P{
+    font-family: 'Satoshi';
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 900;
+  
+}
+
+.contacts{
+    width: 238px;
+    height: 231px;
+    flex-shrink: 0;
+    line-height: 40px;
+}
+.social{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.social ul{
+    display: flex;
+    list-style-type: none;
+    gap: 20px;
+}
+.social img{
+    background: #FFF;
+    border-radius: 30px;
+    padding: 8px;
+    width: 20px;
+    height: 20px;
+}
+
+.policies ul{
+    display: flex;
+    list-style-type: none;
+    gap: 20px;
+}
+
+.bootom-footer{
+    display: flex;
+    justify-content: space-between;
+}
+.mobile-footer{
+    display: none;
+}
+
+@media screen and (max-width:768px) {
+    .foot-general{
+        display: none;
+    }
+
+    .mobile-footer{
+        display: block;
+        padding: 20px 10px;
+        flex-shrink: 0;
+        color: #FFF;
+        margin-top: 0px;
+        background: var(--primary-darker, #0C1618);
+    }
+    .socila-media-handles{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .socil-media-links{
+        display: flex;
+        gap: 10px;
+    }
+    .socila-media-handles img{
+        background: #FFF;
+        border-radius: 30px;
+        padding: 8px;
+        width: 20px;
+        height: 20px;
+    }
+
+
+    .learn-more-aboutus ul{
+        list-style: none;
+        line-height: 30px;
+        margin-left: -40px;
+    }
+    .learn-more-aboutus p,
+    .contact-us p,
+    .socila-media-handles p{
+        font-family: 'Satoshi';
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 130%;
+    }
+    .adressy{
+        font-family: 'Poppins';
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 170%;
+    }
+    .after-line{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+}

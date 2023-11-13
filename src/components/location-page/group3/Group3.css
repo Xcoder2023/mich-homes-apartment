@@ -1,0 +1,149 @@
+.together{
+    display: flex;
+    flex-direction: column;
+    /* grid-template-columns: repeat(2, 1fr); */
+    padding: 50px 160px;
+    gap: 100px 0px;
+}
+.setting-div,
+.setting-div2{
+    display: flex;
+    gap: 50px;
+}
+.everyone{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 10px;
+}
+.needs{
+    color: var(--Black, #000);
+    font-family: 'Satoshi';
+    font-size: 29px;
+    font-style: normal;
+    font-weight: 900;
+    align-self: stretch;
+    margin-bottom: -10px;
+}
+.finding-an{
+    color: var(--primary-lighter, #414647);
+    font-family: 'Poppins';
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 400;
+    line-height:30px;
+    width: 540px;
+}
+
+.pallor-view{
+    background: url(../../assets/page4-assets/Rectangle\ 4.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 8px;
+    width: 455px;
+    height: 455px;
+    flex-shrink: 0;
+}
+
+.dinning4{
+    background: url(../../assets/page4-assets/Rectangle\ 4@2x.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 8px;
+    width: 455px;
+    height: 455px;
+    flex-shrink: 0;
+}
+
+.bargains{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 10px;
+}
+.access{
+    color: var(--Black, #000);
+    font-family: 'Satoshi';
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 900;
+    align-self: stretch;
+    margin-bottom: -10px;
+}
+
+.greatest{
+    color: var(--primary-darker, #0C1618);
+    font-family: 'Poppins';
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 400;
+    line-height:30px;
+    width: 467px;
+}
+.deals-btn{
+    display: flex;
+    height: 50px;
+    padding: 16px 40px;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    border-radius: 8px;
+    color: #fff;
+    background: var(--primary-darker, #0C1618);
+}
+@media screen and (max-width:768px) {
+    .together{
+        padding: 20px 16px;
+        gap: 0px 0px;
+    }
+
+    .setting-div,
+    .setting-div2{
+        gap: 10px;
+    }
+
+    .setting-div{
+        flex-direction: column;
+    }
+    .setting-div2{
+        flex-direction: column-reverse;
+    }
+
+
+    .finding-an{
+        color: var(--primary-lighter, #414647);
+        font-family: 'Poppins';
+        font-size: 17px;
+        font-style: normal;
+        font-weight: 400;
+        line-height:30px;
+        width: 100%;
+    }
+
+    .pallor-view{
+        background: url(../../assets/mobile-assets/location/Rectangle\ 12.png);
+        width: 100%;
+        height: 225px;
+        flex-shrink: 0;
+    }
+    .dinning4{
+        background: url(../../assets/mobile-assets/location/Rectangle\ 12\ \(1\).png);
+        width: 100%;
+        height: 225px;
+        flex-shrink: 0;
+    }
+    .greatest{
+        color: var(--primary-darker, #0C1618);
+        font-family: 'Poppins';
+        font-size: 17px;
+        font-style: normal;
+        font-weight: 400;
+        line-height:30px;
+        width: 100%;
+    }
+    
+}

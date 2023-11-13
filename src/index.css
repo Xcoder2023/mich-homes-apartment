@@ -1,0 +1,16 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap");
+
+@font-face {
+  font-family: "satoshi";
+  src: url(./components/Satoshi_Complete/Satoshi_Complete/Fonts/OTF/Satoshi-Black.otf);
+}
+@font-face {
+  font-family: "millik";
+  src: url(./components/millik-5056651/Millik.otf);
+}

@@ -1,0 +1,227 @@
+.form-two-two{
+    display: flex;
+    justify-content: center;
+    padding: 50px 160px 150px 160px;
+    gap: 0px;
+    color: #ffff;
+}
+.formtwo-parts{
+    display: flex;
+    flex-direction: column;
+    margin-top: -55px;
+}
+.formtwo-parts p{
+    color: var(--Black, #000);
+    font-family: 'Satoshi';
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 130%; 
+    width: 470px;
+}
+#searchs-phone{
+    display: none;
+}
+#searchs{
+    display: flex;
+    width: 400px;
+    height: 60px;
+    padding: 21px 24px 21px 16px;
+    align-items: center;
+    flex-shrink: 0;
+    border: none;
+    font-family: 'poppins';
+    border-radius: 4px;
+    background: var(--light-light-1, #DCDFE0);
+}
+
+.formTwo-propers{
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    flex-shrink: 0;
+    background: var(--primary-main-color, #004643);
+}
+
+.bed-bath-roomss{
+    display: flex;
+    gap: 10px;
+}
+.bath-roomss,
+.bed-roomss{
+    display: flex;
+}
+
+
+.bed-labels{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.search-btns{
+    display: flex;
+}
+#bed-btns{
+    border: none;
+    border-radius: 0px 8px 8px 0px;
+    background: var(--primary-darker, #0C1618);
+}
+
+#bath-search{
+    display: flex;
+    height: 40px;
+    padding-left: 10px;
+    justify-content: flex-end;
+    align-items: center;
+    flex-shrink: 0;
+    border: none;
+   border-radius: 4px 0px 0px 4px;
+}
+#buget-bath-searchs{
+    display: flex;
+    width: 395px;
+    height: 40px;
+    padding-left: 10px;
+    justify-content: flex-end;
+    align-items: center;
+    flex-shrink: 0;
+    border: none;
+   border-radius: 0px 0px 0px 0px;
+}
+.next-btns{
+    display: flex;
+    gap: 20px;
+    width: 100%;
+}
+#left-pointer{
+    display: flex;
+    width: 80px;
+    height: 0px;
+    padding: 23px 0px;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+    border-radius: 8px;
+    background: transparent;
+    border: 1px solid var(--White, #FFF);
+}
+
+button.black{
+    background-color: black;
+    display: flex;
+    width: 310px;
+    height: 57px;
+    padding: 16px 48px;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    flex-shrink: 0;
+    border: none;
+    border-radius: 4px;
+}
+.next{
+    display: flex;
+    width: 340px;
+    height: 45px;
+    padding: 16px 48px;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    flex-shrink: 0;
+    border: none;
+    border-radius: 4px;
+}
+@media screen and (max-width:768px) {
+    .form-two-two{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 0px 16px 0px 16px;
+        gap: 0px;
+        color: var(--primary-grey, #818181);
+    }
+    .formtwo-parts{
+        margin-top: 0px;
+    }
+
+    .formtwo-parts p{
+        font-size: 25px; 
+        width: 100%;
+    }
+
+    #searchs{
+        display: none;
+    }
+    #searchs-phone{
+        display: block;
+        width: 346px;
+        height: 60px;
+        padding: 24px 24px 21px 16px;
+        align-items: center;
+        flex-shrink: 0;
+        border: none;
+        font-family: 'poppins';
+        border-radius: 4px;
+        background: var(--light-light-1, #DCDFE0);
+    }
+
+
+    .formTwo-propers{
+        padding: 20px 0px;
+        display: flex;
+        background: var(--White, #FFF);
+    }
+
+    .bed-bath-roomss{
+        display: flex;
+        gap: 20px;
+    }
+    #bed-btns{
+        width: 60px;
+        border-radius: 0px 4px 4px 0px;
+        background: var(--primary-main-color, #004643);
+    }
+
+
+    #bath-search{
+        display: flex;
+        align-items: center;
+        width: 87px;
+        height: 50px;
+        padding-left: 10px;
+        justify-content: center;
+        border: 1px solid var(--light-light-1, #DCDFE0);
+        
+    }
+    #buget-bath-searchs{
+        display: flex;
+        width: 267px;
+        height: 50px;
+        padding-left: 10px;
+        justify-content: flex-end;
+        align-items: center;
+        border: 1px solid var(--light-light-1, #DCDFE0);
+    }
+    .next-btns{
+        display: flex;
+        gap: 20px;
+        width: 0%;
+       
+    }
+    #left-pointer{
+        display: flex;
+        width: 80px;
+        height: 30px;
+        padding: 28px 0px;
+        background: var(--secondary-dark, #D1AC00);
+    }
+
+    button.black{
+        width: 240px !important;
+       
+    }
+    .next{
+        width: 240px;
+        height: 60px;
+    }
+}

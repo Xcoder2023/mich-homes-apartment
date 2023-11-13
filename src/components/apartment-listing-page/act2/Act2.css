@@ -1,0 +1,162 @@
+.housing-gallery {
+  display: flex;
+  flex-direction: column;
+  padding: 50px 160px;
+  max-width: 100%;
+  height: auto;
+}
+
+.rooms-show {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+}
+
+.room1,
+.room2,
+.room3,
+.room4,
+.room5,
+.room6,
+.room7,
+.room8 {
+  background: url(../../assets/apartment-listing-assets/act2-assets/Rectangle\ 48.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 400px;
+  flex-shrink: 0;
+  border-radius: 4px;
+  color: #ffff;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+.room7,
+.room8{
+  display: none;
+}
+
+.navigation-arrows {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 40px;
+}
+
+.pop {
+  height: 100vh;
+  width: 100%;
+  top: 0px;
+  position: fixed;
+  z-index: 10;
+  animation: identifier 1s linear;
+}
+
+@keyframes identifier {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.tiny-insertions {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: "Poppins";
+}
+.tiny-insertions img {
+  width: 20px;
+  height: 20px;
+}
+
+.location-tag {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.search-icon {
+  height: 30px;
+  color: #000;
+  display: flex;
+  padding: 0px 4px;
+  justify-content: center;
+  align-items: center;
+  gap: 4px;
+  border-radius: 4px;
+  background: var(--White, #fff);
+}
+.funitures {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  text-align: center;
+}
+.bathroom,
+.days {
+  display: flex;
+  align-items: center;
+  font-size: 11px;
+  gap: 4px;
+}
+@media screen and (max-width:768px) {
+  .housing-gallery{
+    padding: 30px 16px;
+  }
+  .rooms-show {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  .navigation-arrows{
+    padding: 100px 0px 0px 0px;
+  
+    
+  }
+  .room7,
+  .room8{
+    display: block;
+  }
+  .room1{
+    height: 100%;
+    
+  }
+  .room2{
+    background: url(../../assets/mobile-assets/location/latest/Rectangle\ 48\ \(2\).png);
+    height: 100%;
+    display: flex;
+    width: 100%;
+  }
+  .room3{
+    background: url(../../assets/mobile-assets/location/latest/Rectangle\ 48\ \(3\).png);
+    height: 100%;
+    width: 100%;
+  }
+  .room4{
+    background: url(../../assets/mobile-assets/location/latest/Rectangle\ 48\ \(4\).png);
+    height: 100%;
+  }
+  .room5{
+    background: url(../../assets/mobile-assets/location/latest/Rectangle\ 48\ \(5\).png);
+    height: 100%;
+  }
+  .room6{
+    background: url(../../assets/mobile-assets/location/latest/Rectangle\ 48\ \(6\).png);
+    height: 100%;
+  }
+  .room7{
+    background: url(../../assets/mobile-assets/location/latest/Rectangle\ 48\ \(7\).png);
+    height: 100%;
+  }
+  .room8{
+    background: url(../../assets/mobile-assets/location/latest/Rectangle\ 48\ \(8\).png);
+    height: 100%;
+  }
+
+  
+}
+

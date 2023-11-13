@@ -1,0 +1,108 @@
+.nave-all{
+    display: flex;
+    align-items: center;
+    padding: 0 160px;
+    border-radius: 8px;
+    background: var(--White, #FFF);
+    box-shadow: 0px 8px 24px 0px rgba(172, 172, 172, 0.20);
+    position: sticky;
+    top: 0;
+    padding-top: 20px;
+    gap: 8px;
+    z-index: 10;
+}
+.mobile-form-nav{
+    display: none;
+}
+
+
+.brands-logo img{
+    width: 120px;
+}
+
+.listings ul{
+    display: flex;
+    list-style-type: none;
+    gap: 10px;
+    color: var(--primary-darker, #0C1618);
+    font-family: 'Poppins';
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 500;
+}
+.linksto{
+    text-decoration: none;
+    color: var(--primary-darker, #0C1618);
+}
+
+.reaches-out{
+    display: flex;
+    align-items: center;
+    gap: 100px;
+}
+
+
+.mores{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    font-family: 'Poppins';
+    }
+.locates{
+    display: inline-flex;
+    height: 40px;
+    padding: 0px 15px;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    flex-shrink: 0;
+    border-radius: 8px;
+    font-family: 'Poppins';
+    border: 1px solid var(--primary-darker, #0C1618);
+}
+.teles {
+    display: flex;
+    color: var(--primary-darker, #0C1618);
+    font-family: 'Poppins';
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 500;
+    align-items: center;
+}
+.teles-logo img{
+    width: 25px;
+    opacity: 0.5;
+}
+@media screen and (max-width:768px) {
+    .nave-all{
+        display: none;
+    }
+    .mobile-form-nav{
+        display: block;
+        padding: 30px;
+        border-radius: 8px;
+        background: var(--White, #FFF);
+       
+    }
+    .mobile-carriers{
+        display: flex;
+        gap: 20px;
+        width: 100%;
+       
+        padding-left: 10px;
+        height: 4rem;
+        align-items: center;
+        border-radius: 8px;
+        box-shadow: 0px 8px 24px 0px rgba(172, 172, 172, 0.20);
+    }
+    .mobile-carriers p{
+        color: var(--primary-darker, #0C1618);
+        font-family: 'Millik';
+        font-size: 26px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+    
+}

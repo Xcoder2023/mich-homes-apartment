@@ -1,0 +1,119 @@
+.mobile-footer{
+    display: none;
+}
+
+.footer-general{
+    padding: 50px 160px;
+    flex-shrink: 0;
+    color: #FFF;
+    background: var(--primary-darker, #0C1618);
+    
+}
+.foot-logos img{
+    width: 150px;
+}
+
+.get-started ul{
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+    gap: 20px;
+    width: 120px;
+    font-size: 13px;
+    margin-left: -40px;
+}
+
+.get-started p{
+    font-family: 'Satoshi';
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 900;
+}
+
+.wrapper{
+    display: flex;
+    justify-content: center;
+    gap: 35px;
+}
+
+.awka-michHome{
+    color: #FFF;
+    font-family: 'Poppins';
+    font-size: 19.5px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 170%; 
+    width: 275px;
+}
+
+.info{
+    width: 190px;
+    height: 186px;
+    flex-shrink: 0;
+    
+}
+
+.info ul{
+    list-style-type: none;
+    line-height: 30px;
+    margin-left: -40px;
+    font-size: 13px;
+}
+
+.contact P,
+.info P,
+.socials P{
+    font-family: 'Satoshi';
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 900;
+  
+}
+
+.contact{
+    width: 200px;
+    height: 231px;
+    flex-shrink: 0;
+    
+    margin-left: -40px;
+}
+.adres{
+    line-height: 40px;
+}
+.socials{
+    display: flex;
+    flex-direction: column;
+}
+
+.socials ul{
+    display: flex;
+    list-style-type: none;
+    gap: 10px;
+    margin-left: -40px;
+}
+.socials img{
+    background: #FFF;
+    border-radius: 30px;
+    padding: 5px;
+    height: 20px;
+}
+
+.policies ul{
+    display: flex;
+    list-style-type: none;
+    gap: 20px;
+}
+
+.bootom-footer{
+    display: flex;
+    justify-content: space-between;
+}
+@media screen and (max-width:768px) {
+    .mobile-footer{
+        display: block;
+    }
+    .footer-general{
+        display: none;
+    }
+    
+}

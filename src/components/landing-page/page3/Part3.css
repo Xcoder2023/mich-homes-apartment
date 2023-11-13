@@ -1,0 +1,182 @@
+.base{
+    display: flex;
+    flex-direction: column;
+    padding: 0 160px;
+}
+
+.blog-line{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.single{
+    color: var(--Black, #000);
+    text-align: center;
+    font-family: 'satoshi';
+    font-size: 48.83px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 130%; 
+}
+.read-more{
+    display: flex;
+    color: var(--primary-main-color, #004643);
+    font-family: 'Poppins';
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 170%; 
+}
+.read-more button{
+    border: none;
+    background: transparent;
+    padding-top: 10px;
+}
+.grid-boxes{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+.box2A,
+.box2B,
+.box1A{
+    display: none;
+}
+
+.box1{
+    background: url(../../assets/page3-assets/Rectangle\ 48.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 400px;
+    flex-shrink: 0;
+    border-radius: 4px;
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: flex-end;
+   padding: 0 20px 40px 20px;
+}
+
+.renting{
+    width: 80px;
+    margin-bottom: -20px;
+}
+.hacks{
+    width: 262px;
+    margin-bottom: -20px;
+}
+.people{
+    width: 156px;
+    margin-bottom: -20px;
+}
+.box1 h5,
+.box1A h5,
+.box2A h5,
+.box2B h5{
+    color: var(--White, #FFF);
+    font-family: 'Poppins';
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 150%;
+    background-color: rgb(227, 167, 15);
+}
+.box1 p,
+.box1A p,
+.box2A p,
+.box2B p{
+    color: var(--White, #FFF);
+    font-family: 'Poppins';
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 150%; 
+}
+.box1 a,
+.box1A a,
+.box2A a,
+.box2B a{
+    color: #FFF;
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-family: 'Poppins';
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 150%; 
+}
+
+
+@media screen and (max-width:768px) {
+    .base{
+        padding: 0 10px;
+    }
+    
+    .blog-line{
+        flex-direction: column;
+    }
+    .single{
+        font-size: 30px;
+    }
+    .read-more{
+        font-size: 19px;
+    }
+    
+    .grid-boxes{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .box1 h5,
+    .box1 p{
+        font-weight: 250px;
+    }
+    .box1{
+        display: none;
+    }
+    .box1A{
+        background: url(../../assets/page3-assets/Rectangle\ 48.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 400px;
+        flex-shrink: 0;
+        border-radius: 4px;
+        display: inline-flex;
+        flex-direction: column;
+        justify-content: flex-end;
+       padding: 0 20px 40px 20px;
+    }
+    .box2A{
+        background: url(../../assets/mobile-assets/Rectangle\ 48.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 400px;
+        flex-shrink: 0;
+        border-radius: 4px;
+        display: inline-flex;
+        flex-direction: column;
+        justify-content: flex-end;
+       padding: 0 20px 40px 20px;
+    }
+    .box2B{
+        background: url(../../assets/mobile-assets/Rectangle\ 48\ \(1\).png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 400px;
+        flex-shrink: 0;
+        border-radius: 4px;
+        display: inline-flex;
+        flex-direction: column;
+        justify-content: flex-end;
+       padding: 0 20px 40px 20px;
+    }
+
+   
+}    
+
+
+    
+

@@ -1,0 +1,117 @@
+.sockek-all {
+  display: flex;
+  justify-content: center;
+  padding: 0 160px;
+}
+
+.apartment-listing {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: auto;
+}
+
+.latest-Apartment {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.latest-Apartments {
+  color: var(--primary-main-color, #004643);
+  font-family: 'Millik';
+  font-size: 70px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 130%;
+}
+.current-situation {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: var(--primary-lighter, #414647);
+  text-align: center;
+  font-family: "Poppins";
+  font-size: 23px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 170%;
+  /* width: 900px; */
+}
+.btn-array {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  padding: 20px 0px;
+}
+.listing-btn {
+  display: flex;
+  width: 136px;
+  height: 6px;
+  padding: 29px 23px;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  flex-shrink: 0;
+  color: #fff;
+  border-radius: 8px;
+  border: none;
+  background: var(--primary-darker, #0c1618);
+}
+.clear-btn {
+  border: none;
+  border-radius: 8px;
+  color: #fff;
+  background: var(--secondary-dark, #d1ac00);
+  display: flex;
+  width: 150px;
+  height: 6px;
+  padding: 29px 23px;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  flex-shrink: 0;
+}
+
+@media screen and (max-width:768px) {
+  .sockek-all {
+    color: #fff;
+    padding: 0px 16px;
+    background: var(--primary-darker, #0C1618);
+  }
+
+  .btn-array {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+    gap: 10px;
+    padding: 20px 0px;
+   
+  }
+  .listing-btn{
+    background: var(--primary-lighter, #414647);
+  }
+
+  .latest-Apartments {
+    font-family: 'Millik';
+    font-size: 60px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 130%;
+    color: #fff;
+   
+  }
+  .latest-Apartment {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .current-situation{
+    color: #fff;
+    font-size: 18px;
+    width: 366px;
+
+  }
+  
+}

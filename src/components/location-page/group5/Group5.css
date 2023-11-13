@@ -1,0 +1,102 @@
+.holders {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 100px;
+  padding: 0px 160px 100px 160px;
+}
+
+.skill-side {
+  background: var(--primary-main-color, #004643);
+  height: 500px;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.impore{
+    padding: 40px;
+}
+
+.improve{
+color: var(--White, #FFF);
+font-family: 'Satoshi';
+font-size: 40px;
+font-style: normal;
+font-weight: 900;
+line-height: 130%;
+width: 400px;
+}
+
+.assist{
+    color: var(--White, #FFF);
+    font-family: 'Poppins';
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 50px;
+    width: 350px;
+}
+.btn-skill{
+    display: flex;
+    width: 150px;
+    height: 40px;
+    padding: 16px 20px;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    border: none;
+    border-radius: 8px;
+    font-family: 'Poppins';
+    color: #FFF;
+    background: var(--primary-darker, #0C1618);
+}
+.linkshape{
+  text-decoration: none;
+}
+
+.interior-gallery {
+  background: url(../../assets/location-assets/group5-asset/Frame\ 48.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 50%;
+  height: 500px;
+  border-radius: 0px 8px 8px 0px;
+}
+
+@media screen and (max-width:768px) {
+
+  .holders {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 0px;
+    padding: 0px 0px 0px 0px;
+  }
+  .skill-side {
+   
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    
+  }
+    .impore{
+      padding: 10px;
+  }
+  .improve{
+    width: 100%;
+    }
+    .assist{
+      width: 100%;
+  }
+  .interior-gallery {
+    background: url(../../assets/mobile-assets/location/Frame\ 44.png);
+    width: 100%;
+    height: 250px;
+    border-radius: 0px 0px 0px 0px;
+    
+  }
+}

@@ -1,0 +1,71 @@
+.ideal-container{
+    background: url(../../assets/apartment-listing-assets/act3-assets/Rectangle\ 26.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 500px;
+    padding: 64px 0px 0px 160px;
+    flex-shrink: 0;
+    z-index: -10;
+}
+
+.ideal{
+    color: var(--primary-darker, #0C1618);
+    font-family: 'Satoshi';
+    font-size: 60px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 130%;
+    width: 509px;
+}
+.ideal-btn{
+    display: inline-flex;
+    padding: 16px 48px;
+    justify-content: center;
+    align-items: center;
+    font-family: 'poppins';
+    border: none;
+    gap: 8px;
+    flex-shrink: 0;
+    border-radius: 8px;
+    color: #fff;
+    background: var(--primary-darker, #0C1618);
+}
+@media screen and (max-width:768px) {
+    .ideal-container{
+        background: url(../../assets/mobile-assets/location/latest/Rectangle\ 53.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        height: 25rem;
+        padding: 64px 0px 0px 16px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 100px;
+    }
+    .ideal{
+        color: var(--White, #FFF);
+        font-family: 'Satoshi';
+        font-size: 30px;
+        font-style: normal;
+        font-weight: 900;
+        line-height: 130%;
+        width: 100%;
+        text-align: center;
+    }
+    .ideal-btn{
+        display: inline-flex;
+        padding: 16px 48px;
+        justify-content: center;
+        align-items: center;
+        font-family: 'poppins';
+        border: none;
+        gap: 8px;
+        flex-shrink: 0;
+        border-radius: 8px;
+        color: #fff;
+        background: var(--secondary-dark, #D1AC00);
+    }
+    
+}
