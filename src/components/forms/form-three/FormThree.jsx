@@ -115,7 +115,7 @@ const FormThree = () => {
               <button
                 id="next-parts"
                 type="submit"
-                className={color === "black" ? "black" : "parted"}
+                className={color === "black" ? "green" : "parted"}
               >
                 Next{" "}
                 <svg

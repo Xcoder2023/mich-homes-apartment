@@ -123,7 +123,7 @@
     border-radius: 4px;
     background: var(--dark-dark-4, #C7C9D9);
 }
-button.black{
+button.green{
     display: flex;
     width: 425px;
     height: 57px;
@@ -171,6 +171,7 @@ button.black{
         height: 100%;
         width: 100%;
         padding: 0px;
+        color: black;
         background: var(--White, #FFF);
     }
  
@@ -187,7 +188,10 @@ button.black{
 
     #advert-search{
         display: flex;
-        width: 265px;
+        width: 273px;
+        font-family: 'poppins';
+        font-weight: 400px;
+        font-size: 16px;
         padding: 20px 0px 21px 16px;
         justify-content: flex-end;
         align-items: center;
@@ -208,10 +212,13 @@ button.black{
         background: var(--secondary-dark, #D1AC00);
     }
     #text-box{
-        width: 20rem;
+        width: 19.8rem;
         height: 160px;
         padding: 16px 10px 10px 16px;
         align-items: flex-start;
+        font-family: 'poppins';
+        font-weight: 400px;
+        font-size: 16px;
         border: none;
         border: 1px solid var(--light-light-1, #DCDFE0);
         border-radius: 8px;
@@ -225,6 +232,9 @@ button.black{
         display: flex;
         gap: 20px;
         width: 50%;
+    }
+    button.green{
+        width: 245px !important;
     }
     
 }
