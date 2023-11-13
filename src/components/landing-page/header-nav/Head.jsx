@@ -1,38 +1,42 @@
 import React, { useState, useEffect } from "react";
 import "./Head.css";
 import logo from "../../assets/logo/Brand Logo Large - Full 4.png";
-import {Link} from 'react-router-dom'
+import { Link } from "react-router-dom";
 import MobileMenu from "../../mobile-menu/MobileMenu";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
 const Head = () => {
-
   const [open, setOpen] = useState(false);
+
   const sideShow = () => {
-    setOpen((prev) => !prev);
+    setOpen(true);
   };
 
-      useEffect(()=>{
-      AOS.init();
-    }, [])
-  
+  useEffect(() => {
+    AOS.init();
+  }, []);
+
   return (
     <>
       <div className="mobile-view">
-      {open && (
-              <div data-aos="fade-right" className="mobile-overlay">
-                <MobileMenu />
-              </div>
-            )}
+        {open && (
+          <div data-aos="fade-right" className="mobile-overlay">
+            <MobileMenu />
+          </div>
+        )}
         <div className="mobile-carrier">
-        <div class="harmbuger" onClick={sideShow} >
-              <span class="bar"></span>
-              <span class="bar"></span>
-              <span class="bar"></span>
-        </div>
-          <div><p className="loop">Mich Homes</p></div>
-        <Link to='/center'><button id="mobile-header-btn">Choose Location</button></Link>
+          <div class="harmbuger" onClick={sideShow}>
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+          </div>
+          <div>
+            <p className="loop">Mich Homes</p>
+          </div>
+          <Link to="/center">
+            <button id="mobile-header-btn">Choose Location</button>
+          </Link>
         </div>
       </div>
 
