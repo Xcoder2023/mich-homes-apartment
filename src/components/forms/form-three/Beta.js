@@ -6,9 +6,9 @@ import Footer from '../../location-page/location-footer/Footer'
 const Beta = () => {
   return (
     <>
-        {/* <FormNav /> */}
+        <FormNav />
         <FormThree />
-        {/* <Footer /> */}
+        <Footer />
     </>
   )
 }
