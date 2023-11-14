@@ -1,4 +1,4 @@
-.swipe-container {
+/* .swipe-container {
   position: relative;
   width: 100%;
   height: 100vh;
@@ -16,19 +16,21 @@
 .swipe-container.swiped-in {
   transform: translateX(-100%);
 }
+*/
 
-.swipe-button {
-  position: absolute;
-  bottom: 0;
-  left: 50%;
-  transform: translateX(-50%);
-  background-color: #3498db;
-  color: #fff;
-  padding: 10px;
-  cursor: pointer;
-  user-select: none;
+.mobile-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  transition: transform 0.3s ease-in-out;
+  transform: translateX(0);
 }
 
 .mobile-overlay {
-  position: absolute;
+  transform: translateX(-100%);
 }
+
+

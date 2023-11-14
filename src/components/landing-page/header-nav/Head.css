@@ -116,7 +116,7 @@
         transform: translateY(-16px) rotate(-45deg);
       } */
     
-      /* .mobile-view.active {
+      /* ..active {
         right: 0;
       }
       .mobile-overlay{
