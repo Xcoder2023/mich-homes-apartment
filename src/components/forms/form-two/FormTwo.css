@@ -207,7 +207,6 @@ button.yello{
         border: 1px solid var(--light-light-1, #DCDFE0);
     }
     .next-btns{
-        flex-wrap: wrap;
         gap: 20px;
        
     }
