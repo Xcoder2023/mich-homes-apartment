@@ -1,85 +1,18 @@
-import React, { useState, useEffect } from "react";
-import "./Head.css";
-import logo from "../../assets/logo/Brand Logo Large - Full 4.png";
+import React from "react";
 import { Link } from "react-router-dom";
-// import MobileMenu from "../../mobile-menu/MobileMenu";
-import AOS from "aos";
-import "aos/dist/aos.css";
+import { useState } from "react";
 
 const Head = () => {
-  const [open, setOpen] = useState(false);
-
-  const toggleMenu = () => {
-    // setOpen((prev) => !prev);
-    setOpen(!open)
-  };
-
-  useEffect(() => {
-    AOS.init();
-  }, []);
-
-  const [swipedIn, setSwipedIn] = useState(false);
-
-  const handleSwipe = () => {
-    setSwipedIn((prev) => !prev);
-  };
+  const [click, setClick] = useState(false);
+  const handleClick = () => setClick(!click);
 
   return (
     <>
-      <div className="mobile-view">
-        <div className="mobile-carrier">
-          <div class="harmbuger" onClick={toggleMenu}>
-            <span class="bar"></span>
-            <span class="bar"></span>
-            <span class="bar"></span>
-          </div>
-          <div>
-            <p className="loop">Mich Homes</p>
-          </div>
-          <Link to="/center">
-            <button id="mobile-header-btn">Choose Location</button>
-          </Link>
-        </div>
-      </div>
-
-      <div className="general">
-        <div className="logo">
-          <img src={logo} alt="logo-img" />
-        </div>
-        <div className="about">
-          <ul>
-            <li key="about">About us</li>
-            <li key="Career">Career</li>
-            <li key="Blog">Blog</li>
-          </ul>
-        </div>
-        <Link to="/center" className="location">
-          <button>
-            Choose location{" "}
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="34"
-              height="35"
-              viewBox="0 0 34 36"
-              fill="none"
-            >
-              <path
-                d="M17.0003 23.8334L5.66699 12.1667H28.3337L17.0003 23.8334Z"
-                fill="#0C1618"
-              />
-            </svg>
-          </button>
-        </Link>
-      </div>
-      {open && (
-        <div
-          className={`mobile-overlay ${swipedIn ? "mobile-view" : "mobile-overlay"}`}
-          data-aos="fade-left"
-        >
-          <div className="swipe-content">
-            <div className="mobile-nav">
+      <div className="navbar">
+        <div className="harmburger" onClick={handleClick}>
+          {click ? (
+            <>
               <svg
-                onClick={handleSwipe}
                 xmlns="http://www.w3.org/2000/svg"
                 width="32"
                 height="32"
@@ -92,42 +25,32 @@ const Head = () => {
                   fill="white"
                 />
               </svg>
-              <div className="mobile-p">
-                <p>Mich Homes</p>
-              </div>
-              <button id="mobile-nav-btn">
-                location
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="16"
-                  height="16"
-                  viewBox="0 0 16 16"
-                  fill="none"
-                >
-                  <path
-                    d="M7.99999 10.6667L2.66666 5.33333H13.3333L7.99999 10.6667Z"
-                    fill="#0C1618"
-                  />
-                </svg>
-              </button>
+            </>
+          ) : (
+            <div class="harmbuger">
+              <span class="bar">lor</span>
+              <span class="bar">lor</span>
+              <span class="bar">lor</span>
             </div>
-            <div className="mobile-holder">
-              <div className="mobile-pop">
-                <p>our Process</p>
-                <p>latest Apartment Listing</p>
-                <p>Neighbourhoods</p>
-                <p>Relocation</p>
-                <p>About Us</p>
-                <p>Careers</p>
-                <p>FAQs</p>
-                <p>Blog</p>
-              </div>
-            </div>
-          </div>
+          )}
         </div>
-      )}
+        <div className={click ? "projects active" : "projects"}>
+          <ul className="list">
+            <li>our Process</li>
+            <li>latest Apartment Listing</li>
+            <li>Neighbourhoods</li>
+            <li>Relocation</li>
+            <li>About Us</li>
+            <li>Careers</li>
+            <li>FAQs</li>
+            <li>Blog</li>
+          </ul>
+        </div>
+        <div className="logo">
+          <Link to="/">Mich</Link>
+        </div>
+      </div>
     </>
   );
 };
-
 export default Head;
