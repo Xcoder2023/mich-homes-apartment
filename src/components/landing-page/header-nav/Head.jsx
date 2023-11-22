@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { useState } from "react";
+import "./Head.css";
 
 const Head = () => {
   const [click, setClick] = useState(false);
@@ -9,6 +10,47 @@ const Head = () => {
   return (
     <>
       <div className="navbar">
+          <div className="desk-logo">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="47"
+              height="56"
+              viewBox="0 0 47 56"
+              fill="none"
+              className="logo-icon"
+            >
+              <path
+                d="M43.2511 49.7763L39.6451 47.6959V24.8451L23.4298 34.1969L7.21458 24.8451V47.6959L3.60854 49.7763V18.6201L23.4298 30.0523L43.2511 18.6201V49.7763ZM36.0403 45.6179L32.4343 43.5375V33.153L36.0403 31.0713V45.6179ZM14.4254 43.5375L10.8181 45.6179V31.0713L14.4254 33.153V43.5375ZM10.8181 8.30664L14.4254 6.22624V20.713L10.8181 18.6351V8.30789V8.30664ZM32.433 6.22624L36.0403 8.30664V18.6338L32.433 20.7117V6.22499V6.22624ZM39.6438 16.5534V6.23996L28.8257 0V22.7934L23.4286 25.9053L18.0314 22.7934V0L7.21333 6.23996V16.5534L0 12.3964V56L18.0314 45.6005V35.2296L23.4286 38.344L28.8257 35.2296V45.6005L46.8571 56V12.3964L39.6438 16.5534Z"
+                fill="#D1AC00"
+              />
+            </svg>
+            <p className="mich-homes">Mich Homes</p>
+          </div>
+          <ul className="desk-list">
+            <li>About Us</li>
+            <li>Careers</li>
+            <li>Blog</li>
+          </ul>
+          <Link to="/center">
+            <button className="location-site">
+            Choose location
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="34"
+              height="36"
+              viewBox="0 0 34 36"
+              fill="none"
+            >
+              <path
+                d="M17.0003 23.8334L5.66699 12.1667H28.3337L17.0003 23.8334Z"
+                fill="#0C1618"
+              />
+            </svg>
+            </button>
+            </Link>
+
+        {/* mobile view  */}
+
         <div className="harmburger" onClick={handleClick}>
           {click ? (
             <>
@@ -28,16 +70,16 @@ const Head = () => {
             </>
           ) : (
             <div class="harmbuger">
-              <span class="bar">lor</span>
-              <span class="bar">lor</span>
-              <span class="bar">lor</span>
+              <span class="bar"></span>
+              <span class="bar"></span>
+              <span class="bar"></span>
             </div>
           )}
         </div>
         <div className={click ? "projects active" : "projects"}>
           <ul className="list">
             <li>our Process</li>
-            <li>latest Apartment Listing</li>
+            <li><Link to="/latest">latest Apartment Listing</Link></li>
             <li>Neighbourhoods</li>
             <li>Relocation</li>
             <li>About Us</li>
@@ -46,8 +88,24 @@ const Head = () => {
             <li>Blog</li>
           </ul>
         </div>
-        <div className="logo">
-          <Link to="/">Mich</Link>
+        <div className="homes">
+          <p className="home-name"><Link to='/'>Mich Homes</Link></p>
+        <Link to="/center"><button className={click?"locate-site":"location-sites"}>
+            Choose location
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="34"
+              height="36"
+              viewBox="0 0 34 36"
+              fill="none"
+            >
+              <path
+                d="M17.0003 23.8334L5.66699 12.1667H28.3337L17.0003 23.8334Z"
+                fill="#ffff"
+              />
+            </svg>
+            </button>
+            </Link>
         </div>
       </div>
     </>
