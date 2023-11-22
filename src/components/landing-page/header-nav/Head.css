@@ -108,8 +108,8 @@ li {
       }
 
   .navbar {
-    width: 340px;
-    height: 80px;
+    width: 330px;
+    height: 70px;
     padding: 0px;
     justify-content: center;
     gap: 10px;
@@ -167,7 +167,7 @@ li {
   }
   .location-sites{
     display: inline-flex;
-    padding: 5px;
+    padding: 0px;
     justify-content: center;
     align-items: center;
     border-radius: 6px;
@@ -175,13 +175,13 @@ li {
     color: var(--White, #FFF);
     text-align: center;
     font-family: 'Poppins';
-    font-size: 14px;
+    font-size: 12px;
     font-style: normal;
     font-weight: 200;
   }
   .locate-site{
     display: inline-flex;
-    padding: 5px;
+    padding: 0px;
     justify-content: center;
     align-items: center;
     border-radius: 6px;
@@ -189,7 +189,7 @@ li {
     color: var(--black, #000);
     text-align: center;
     font-family: 'Poppins';
-    font-size: 14px;
+    font-size: 13px;
     font-style: normal;
     font-weight: 500;
   }
