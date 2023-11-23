@@ -94,9 +94,9 @@
   position: fixed;
   align-items: center;
   justify-content: center;
-  top: 75px;
+  top: 20px;
   right: -100%;
-  width: 600px;
+  width: 450px;
   height: 100vh;
   background-color: #FFF;
   transition: 1s;

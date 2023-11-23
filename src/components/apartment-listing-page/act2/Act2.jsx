@@ -7,12 +7,13 @@ import footsqt from "../../assets/apartment-listing-assets/act2-assets/SqFootage
 import clock from "../../assets/apartment-listing-assets/act2-assets/Clock.png";
 // import Pop from '../../pop-up-page/Pop'
 
-import flat1 from "../../assets/pop-up-assets/Rectangle 29.png";
-import flat2 from "../../assets/pop-up-assets/Rectangle 29 (1).png";
-import flat3 from "../../assets/pop-up-assets/Rectangle 29 (2).png";
-import flat4 from "../../assets/pop-up-assets/Rectangle 29 (3).png";
-import flat5 from "../../assets/pop-up-assets/Rectangle 29 (5).png";
-import flat6 from "../../assets/pop-up-assets/Rectangle 29 (5).png";
+// import flat1 from "../../assets/pop-up-assets/Rectangle 29.png";
+// import flat2 from "../../assets/pop-up-assets/Rectangle 29 (1).png";
+// import flat3 from "../../assets/pop-up-assets/Rectangle 29 (2).png";
+// import flat4 from "../../assets/pop-up-assets/Rectangle 29 (3).png";
+// import flat5 from "../../assets/pop-up-assets/Rectangle 29 (5).png";
+// import flat6 from "../../assets/pop-up-assets/Rectangle 29 (5).png";
+import Pop from "../../pop-up-page/Pop";
 
 const Act2 = () => {
   // const [open, setOpen] = useState(false);
@@ -507,7 +508,8 @@ const Act2 = () => {
 
       {/* {click &&( */}
       <div className={click?"pop-up active":"pop-up"}>
-        <div className="flat-show">
+        <Pop />
+        {/* <div className="flat-show">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="24"
@@ -578,7 +580,7 @@ const Act2 = () => {
             <p className="price">800 sf</p>
             <p className="price">2 days ago</p>
           </div>
-        </div>
+        </div> */}
       </div>
       {/* )} */}
     </>

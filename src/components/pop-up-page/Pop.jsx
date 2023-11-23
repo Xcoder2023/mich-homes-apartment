@@ -10,15 +10,15 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 
 const Pop = () => {
-  const [swiped, setSwiped] = useState(false);
-  const handleSwipe = () => setSwiped(!swiped);
-  const popUp = () =>setSwiped((prev)=>(!prev));
+  const [click, setClick] = useState(false);
+  const handleClick = () => setClick(!click);
+  const popUp = () =>setClick((prev)=>(!prev));
 
   return (
     <>
-      {/* {swiped &&( */}
-      <div className={swiped?"pop-up active":"pop-up"}>
-        <div className="flat-show" onClick={popUp}>
+      {/* {click &&( */}
+      <div className='pop'>
+        <div className="flat-show" onClick={handleClick}>
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="24"
@@ -53,9 +53,9 @@ const Pop = () => {
           <div className="flat1">
             <img src={flat6} alt="flat6-home" />
           </div>
-          <div className="flat2">who</div>
-          <div className="flat3">are </div>
-          <div className="flat4">you</div>
+          <div className="flat2"></div>
+          <div className="flat3"></div>
+          <div className="flat4"></div>
         </div>
         <div className="price-tag">
           <div className="neighborhood">
