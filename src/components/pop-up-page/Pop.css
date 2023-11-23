@@ -4,18 +4,20 @@
   justify-content: center;
   align-items: center;
   height: 100%;
+  width: 610px;
+  background-color: #ffff;
 }
 
 .flat-show {
   background: url(../assets/pop-up-assets/Rectangle\ 28.png);
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: cover;
   background-position: center;
-  width: 400px;
+  width: 600px;
   height: 300px;
 }
 .delet {
-  margin: 70px;
+  margin: 30px;
   cursor: pointer;
 }
 .flat2,

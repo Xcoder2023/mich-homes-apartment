@@ -87,31 +87,21 @@
   gap: 4px;
 }
 
-
-
 .pop-up {
   flex-direction: column;
   position: fixed;
   align-items: center;
   justify-content: center;
-  top: 20px;
+  top: 0;
   right: -100%;
-  width: 450px;
   height: 100vh;
-  background-color: #FFF;
+  /* background-color: #FFF; */
   transition: 1s;
+  z-index: 10;
 }
 .pop-up.active {
   right: 0;
 }
-
-
-
-
-
-
-
-
 
 @media screen and (max-width:768px) {
   .housing-gallery{
