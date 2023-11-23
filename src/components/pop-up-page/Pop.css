@@ -4,18 +4,39 @@
   justify-content: center;
   align-items: center;
   height: 100%;
+  width: 610px;
+  background-color: #ffff;
+}
+
+.swip{
+ left: 0;
+}
+
+.swip .active{
+  flex-direction: column;
+  position: fixed;
+  top: 0;
+  align-items: center;
+  justify-content: center;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100vh;
+  background-color: #FFF;
+  z-index: -1;
+  transition: 0.5s;
 }
 
 .flat-show {
   background: url(../assets/pop-up-assets/Rectangle\ 28.png);
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: cover;
   background-position: center;
-  width: 400px;
+  width: 600px;
   height: 300px;
 }
 .delet {
-  margin: 70px;
+  margin: 30px;
   cursor: pointer;
 }
 .flat2,
@@ -83,6 +104,7 @@
   .pop-up{
     height: 100%;
     padding-bottom: 2rem;
+    width: 100%;
   }
 
   .flat-show {

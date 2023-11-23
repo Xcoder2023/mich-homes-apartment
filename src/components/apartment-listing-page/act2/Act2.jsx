@@ -23,7 +23,7 @@ const Act2 = () => {
   // const handleClick = () => setClick(!click);
   const [click, setClick] = useState(false);
   const handleClick = () => setClick(!click);
- 
+
   return (
     <>
       <div className="housing-gallery">
@@ -505,11 +505,8 @@ const Act2 = () => {
         </div>
       </div>
 
-
-      {/* {click &&( */}
-      <div className={click?"pop-up active":"pop-up"}>
-        <Pop />
-        {/* <div className="flat-show">
+      <div className={click ? "pop-up active" : "pop-up"}>
+        <div className="deleted">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="24"
@@ -526,63 +523,8 @@ const Act2 = () => {
             />
           </svg>
         </div>
-        <div className="flat-arrays" data-aos="swipe-right">
-          <div className="flat1">
-            <img src={flat1} alt="flat1-home" />
-          </div>
-          <div className="flat1">
-            <img src={flat2} alt="flat2-home" />
-          </div>
-          <div className="flat1">
-            <img src={flat3} alt="flat3-home" />
-          </div>
-          <div className="flat1">
-            <img src={flat4} alt="flat4-home" />
-          </div>
-          <div className="flat1">
-            <img src={flat5} alt="flat5-home" />
-          </div>
-          <div className="flat1">
-            <img src={flat6} alt="flat6-home" />
-          </div>
-          <div className="flat2"></div>
-          <div className="flat3"></div>
-          <div className="flat4"></div>
-        </div>
-        <div className="price-tag">
-          <div className="neighborhood">
-            <p className="amount">Neighborhood</p>
-            <p className="price">Amawbia, Awka</p>
-            <p className="bath">Bedrooms</p>
-            <p className="amount">2</p>
-          </div>
-          <div className="renta-amout">
-            <p className="amount">Rental Amout</p>
-            <p className="price">N240,000/yr</p>
-            <p className="bath">Bathrooms</p>
-            <p className="amount">2</p>
-          </div>
-        </div>
-        <div className="price-tag2">
-          <div className="neighborhood">
-            <p className="amount">Neighborhood</p>
-            <p className="amount">Rental Amount</p>
-            <p className="bath">Bedrooms</p>
-            <p className="amount">Bathrooms</p>
-            <p className="amount">Suare Footage</p>
-            <p className="amount">Listing Found</p>
-          </div>
-          <div className="renta-amout">
-            <p className="price">Amawbia, Awka</p>
-            <p className="price">N240,000/yr</p>
-            <p className="bath">1</p>
-            <p className="price">1</p>
-            <p className="price">800 sf</p>
-            <p className="price">2 days ago</p>
-          </div>
-        </div> */}
+        <Pop />
       </div>
-      {/* )} */}
     </>
   );
 };
