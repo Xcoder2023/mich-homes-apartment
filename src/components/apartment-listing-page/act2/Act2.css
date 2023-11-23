@@ -102,6 +102,12 @@
 .pop-up.active {
   right: 0;
 }
+.deleted{
+  position: relative;
+  top: 90px;
+  right: 260px;
+  margin-top: -90px;
+}
 
 @media screen and (max-width:768px) {
   .housing-gallery{
@@ -161,18 +167,23 @@
   .pop-up {
     flex-direction: column;
     position: fixed;
-    top: 0;
     align-items: center;
     justify-content: center;
     top: 0;
     right: -100%;
     width: 100%;
-    height: 100%;
+    height: 100vh;
     background-color: #FFF;
     transition: 0.5s;
   }
   .pop-up.active {
     right: 0;
+  }
+  .deleted{
+    position: relative;
+    top: 120px;
+    right: 120px;
+    margin-top: -120px;
   }
 
   
