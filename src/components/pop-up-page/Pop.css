@@ -8,25 +8,6 @@
   background-color: #ffff;
 }
 
-.swip{
- left: 0;
-}
-
-.swip .active{
-  flex-direction: column;
-  position: fixed;
-  top: 0;
-  align-items: center;
-  justify-content: center;
-  top: 0;
-  left: -100%;
-  width: 100%;
-  height: 100vh;
-  background-color: #FFF;
-  z-index: -1;
-  transition: 0.5s;
-}
-
 .flat-show {
   background: url(../assets/pop-up-assets/Rectangle\ 28.png);
   background-repeat: no-repeat;
@@ -35,10 +16,6 @@
   width: 600px;
   height: 300px;
 }
-.delet {
-  margin: 30px;
-  cursor: pointer;
-}
 .flat2,
 .flat3,
 .fla4{
@@ -46,7 +23,6 @@
 }
 
 .flat-arrays {
-  /* background-color: rgb(255, 255, 255); */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -67,10 +43,8 @@
 }
 
 .price-tag {
-  /* background-color: rgb(255, 255, 255); */
   display: flex;
   justify-content: space-between;
-  gap: 50px;
 }
 .price-tag2{
   display: none;
@@ -79,7 +53,7 @@
 .amount {
   color: var(--primary-darker, #0c1618);
   font-family: "Poppins";
-  font-size: 20px;
+  font-size: 17px;
   font-style: normal;
   font-weight: 400;
 }
@@ -98,12 +72,29 @@
   font-style: normal;
   font-weight: 400;
 }
+.last-btn-div{
+  display: flex;
+  justify-content: center;
+  padding-bottom: 30px;
+}
+.choice-btn{
+  border-radius: 4px;
+  background: var(--primary-darker, #0C1618);
+  display: flex;
+  padding: 14px 16px;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  flex-shrink: 0;
+  color: #fff;
+  font-family: "poppins";
+  border: none;
+}
 
 
 @media screen and (max-width:768px) {
   .pop-up{
     height: 100%;
-    padding-bottom: 2rem;
     width: 100%;
   }
 
@@ -115,9 +106,6 @@
     width: 100%;
     height: 20rem;
     flex-shrink: 0;
-  }
-  .delet {
-    padding: 25px;
   }
   .flat-arrays{
     padding: 20px 0px 0px 0px;
@@ -175,8 +163,7 @@
   .price{
     font-weight: 900;
   }
-  
-  .pop-btn{
+  .choice-btn{
     width: 100%;
   }
 }

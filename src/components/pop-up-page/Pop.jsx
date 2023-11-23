@@ -68,6 +68,33 @@ const Pop = () => {
             <p className="price">2 days ago</p>
           </div>
         </div>
+        <div className="last-btn-div">
+        <button className="choice-btn">
+          I want something similar{" "}
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="16"
+            height="16"
+            viewBox="0 0 16 16"
+            fill="none"
+          >
+            <g clip-path="url(#clip0_3285_3068)">
+              <path
+                d="M8.45037 14.3001L14.7488 8.00007L8.44877 1.70007M1.25037 8.00007H14.7504H1.25037Z"
+                stroke="white"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </g>
+            <defs>
+              <clipPath id="clip0_3285_3068">
+                <rect width="16" height="16" fill="white" />
+              </clipPath>
+            </defs>
+          </svg>
+        </button>
+        </div>
       </div>
     </>
   );
