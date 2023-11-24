@@ -27,7 +27,7 @@
 .projects {
   padding-top: 50px;
 }
-.projects > ul {
+.projects  ul {
   font-size: 30px;
   list-style: none;
   gap: 15px;
@@ -137,9 +137,7 @@ li {
     left: 0;
   }
 
-  ul {
-    flex-direction: column;
-  }
+ 
   .harmburger,
   .list {
     display: block;
