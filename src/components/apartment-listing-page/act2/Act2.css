@@ -95,7 +95,6 @@
   top: 0;
   right: -100%;
   height: 100vh;
-  /* background-color: #FFF; */
   transition: 1s;
   z-index: 10;
 }
@@ -103,10 +102,9 @@
   right: 0;
 }
 .deleted{
-  position: relative;
-  top: 90px;
-  right: 260px;
-  margin-top: -90px;
+  position: absolute;
+  top: 30px;
+  left: 30px;
 }
 
 @media screen and (max-width:768px) {
@@ -162,28 +160,8 @@
     background: url(../../assets/mobile-assets/location/latest/Rectangle\ 48\ \(8\).png);
     height: 100%;
   }
-
-
-  .pop-up {
-    flex-direction: column;
-    position: fixed;
-    align-items: center;
-    justify-content: center;
-    top: 0;
-    right: -100%;
-    width: 100%;
-    height: 100vh;
-    background-color: #FFF;
-    transition: 0.5s;
-  }
-  .pop-up.active {
-    right: 0;
-  }
   .deleted{
-    position: relative;
-    top: 120px;
-    right: 120px;
-    margin-top: -120px;
+  left: 50px;
   }
 }
 
