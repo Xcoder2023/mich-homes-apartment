@@ -152,7 +152,6 @@
   }
   .price-tag2{
     display: block;
-    background-color: rgb(255, 255, 255);
     display: flex;
     justify-content: space-between;
     gap: 100px;

@@ -506,14 +506,13 @@ const Act2 = () => {
       </div>
 
       <div className={click ? "pop-up active" : "pop-up"}>
-        <div className="deleted">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="24"
             height="24"
             viewBox="0 0 48 48"
             fill="none"
-            className="delet"
+            className="deleted"
             onClick={handleClick}
           >
             <rect width="48" height="48" rx="4" fill="white" />
@@ -522,7 +521,6 @@ const Act2 = () => {
               fill="#004643"
             />
           </svg>
-        </div>
         <Pop />
       </div>
     </>
